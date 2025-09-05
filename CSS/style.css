@@ -1,0 +1,163 @@
+/*ESTILO DE TODAS AS PAGINAS*/
+/* estilo do cabeçalho */
+
+.header{
+background-color: #05354D; /* cor de fundo*/
+padding: 10px 20px; /*tamanho da área*/
+align-items: center; /* alinhar no centro*/
+display: flex; /*redimensionar*/
+justify-content: space-between; 
+/*colocar os espaços ao lado*/
+
+}/* Configurando a logo do site */
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px; /* tamanho da fonte do texto*/
+    font-weight: bold; /*texto em negrito*/
+
+}  
+    .logo img{ /*dimensões da imagem*/
+        width:80px; /*tamanho*/
+        margin-right: 10px; /*margens*/
+    }
+
+/*CONFIGURÇÃO DA BARRA DE PESQUISA*/
+
+.search-box{
+    flex: 1;
+    max-width: 600px; /*largura maxima*/
+    margin:0 20px; /*margem superior e lateral*/
+    position: relative;/*posição*/
+}
+   
+.search-box input{
+    width: 100%; /*preencher toda área*/
+    padding: 10px 40px 10px 15px; /*definindo o espaço cima,direita,baixo,esquerda*/
+    border:none ; /*borda caixa*/
+    border-radius: 15px; /*expessura da borda*/
+    font-size: 16px; /*tamanho de da fonte do texto*/
+}
+
+/*CONFIGURANDO OS ICONES DO MENU SUPERIOR*/
+
+.icons{
+    display:flex; /*os icones ficam flexiveis a mudaça de tela*/
+    gap: 10px; /*espaço entre icones*/
+    align-items: center;/*centralizar os itens no meio do menu*/
+
+}
+
+.icons img{ /*configurando as imagens dos icones*/ 
+   width: 32px;
+   height: 32px;
+   cursor: pointer;
+}
+/*CONFIGURAÇÕES PARA O RODPÉ*/
+
+.footer{
+    background-color: #08567D;/*cor de fundo*/
+    padding: 15px 40px 15px 40px; /*dimensão*/
+    color: rgba(255, 255, 255, 0.527);/*cor do texto*/
+    font-family: arial, helvetica, sans-serif;/*fonte dos textos*/
+    
+}
+
+.footer-esquerdo{
+    font-weight: bold; /*colocando o texto em negrito*/
+    margin: 0;
+}
+
+.footer-direito{
+    text-align: right;/*texto alinhado à direita*/
+    margin: 0 0 8px 0;
+}
+
+.icons-sociais {
+    /*configurando a área onde fica os icones das redes sociais*/
+    display: flex;
+    gap: 20px;
+    /*distancia entre eles*/
+    justify-content: flex-end;
+}
+
+.icons-sociais img{
+    width: 32px;
+    height: 32px;
+    transition: transform 0,3s; /*animação suave ao passar o mouse em cima*/
+    
+}
+
+
+html, body{
+    height: 100%; /*ocupar 100% da altura da tela*/
+    margin: 0;/*remove as margens padrão*/
+    display: flex;
+    flex-direction: column;/*organize em colunas*/
+
+}
+
+
+main{
+    flex: 1;/*mandar o rodapé para baixo*/
+
+}
+
+/* Inicio do Estilo da Página de Cadastro -------------------------- */
+body {
+  background-color: #f8f9fa;
+}
+.menunavegar, .coluna-colorida, .botao-login{
+    background-color: #05354D;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.btn-outline-secondary {
+  border-left: none;
+}
+
+input.form-control {
+  border-radius: 8px;
+}
+.logo-login{
+   width: 200px; 
+}
+
+
+/* Fim do Estilo da Página de Cadastro ---------------------------- */
+
+/* configuração da área de login*/
+
+.login-card{
+    background-color: rgb(218, 218, 215);
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.img-thumbnail {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+#quantidade {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Fim do Estilo da Tela de Detalhes do Produto ---------------------------- */
+
