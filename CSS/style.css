@@ -147,6 +147,7 @@ body {
 
 .img-thumbnail {
   cursor: pointer;
+  width: 80px;
   transition: transform 0.2s;
 }
 
@@ -159,5 +160,59 @@ body {
   font-size: 1.1rem;
 }
 
+.informacoes{
+  border-radius: 20px;
+}
+
+
+.btn-quantidade .btn, .btn-carr{
+  border-color: black;
+  background-color: #f8f9fa;
+}
 /* Fim do Estilo da Tela de Detalhes do Produto ---------------------------- */
 
+/* Carrinho */
+header h5 {
+  font-weight: bold;
+  
+}
+
+#carrinho h6 {
+  font-size: 1rem;
+}
+
+#carrinho img {
+  border: 1px solid #ddd;
+}
+
+button.btn-warning {
+  background-color: #f8a100;
+  border: none;
+} 
+
+/* Personalização tela pagamento */
+.card-header {
+  font-weight: bold;
+}
+
+#areaPagamento {
+  background: #f9f9f9;
+}
+
+#areaPagamento img {
+  max-width: 150px;
+}
+/* Personalização tela promoções */
+.card {
+  border-radius: 10px;
+}
+
+.bg-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.promocao{
+  background-color: #05354D;
+}
