@@ -109,7 +109,7 @@ main{
 body {
   background-color: #f8f9fa;
 }
-.menunavegar, .coluna-colorida, .botao-login{
+.menunavegar, .coluna-colorida, .botao-login, .avaliacoes{
     background-color: #05354D;
 }
 
@@ -169,6 +169,11 @@ body {
   border-color: black;
   background-color: #f8f9fa;
 }
+.card-img-top{
+  width: 80px;
+  height: 100px;
+  align-items: center;
+}
 /* Fim do Estilo da Tela de Detalhes do Produto ---------------------------- */
 
 /* Carrinho */
@@ -183,6 +188,10 @@ header h5 {
 
 #carrinho img {
   border: 1px solid #ddd;
+}
+.carrinho-color{
+  background-color: #05354D;
+  
 }
 
 button.btn-warning {
@@ -214,5 +223,44 @@ button.btn-warning {
   color: white;
 }
 .promocao{
+  background-color: #05354D;
+}
+/* Menu lateral */
+.nav-link {
+  padding: 8px 0;
+  font-size: 15px;
+}
+.nav-link:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+.vendas{
+  background-color: #05354D;
+}
+/* Ajuste do carrossel */
+#produtosSugestao .card {
+  height: 100%;
+}
+
+#produtosSugestao img {
+  max-height: 120px;
+  object-fit: contain;
+}
+body {
+  background-color: #f8f9fa;
+}
+
+nav {
+  min-height: 100vh;
+  border-radius: 0 10px 10px 0;
+}
+
+.card {
+  border-radius: 12px;
+}
+.menu-perfil{
+  background-color: #05354D;
+}
+.tela-detalhes{
   background-color: #05354D;
 }
