@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-light shadow-sm sticky-top">
+        <div class="container d-flex align-items-center justify-content-between py-2">
+            <!-- Logo -->
+            <a href="#" class="navbar-brand fw-bold text-primary">Minha Loja</a>
+
+            <!-- Barra de pesquisa -->
+            <form class="d-flex flex-grow-1 mx-4">
+                <input class="form-control me-2" type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+                <button class="btn btn-primary">Buscar</button>
+            </form>
+
+            <!-- Ícones -->
+            <div class="d-flex gap-3">
+                <a href="#" class="text-dark"><i class="fas fa-user fa-lg"></i></a>
+                <a href="#" class="text-dark"><i class="fas fa-shopping-cart fa-lg"></i></a>
+                <a href="#" class="text-dark"><i class="fas fa-comments fa-lg"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrossel de Banners -->
+    <div id="carouselBanners" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner w-50 mx-auto"> <!-- largura reduzida e centralizada -->
+    <div class="carousel-item active">
+      <img src="../IMG/banner d.png" class="d-block w-100 rounded" alt="Promoção 1">
+    </div>
+    <div class="carousel-item">
+      <img src="../IMG/banner amarelo.png" class="d-block w-100 rounded" alt="Promoção 2">
+    </div>
+    <div class="carousel-item">
+      <img src="../IMG/banner da loja azul.png" class="d-block w-100 rounded" alt="Promoção 3">
+    </div>
+  </div>
+</div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanners" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanners" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Categorias -->
+    <section class="container my-4">
+        <h4 class="mb-3">Categorias</h4>
+        <div class="d-flex justify-content-around flex-wrap gap-3">
+            <div class="text-center">
+                <img src="basico.png" class="rounded-circle border p-2" width="120" height="120" alt="Básico">
+                <p class="mt-2">Básico</p>
+            </div>
+            <div class="text-center">
+                <img src="acabamento.png" class="rounded-circle border p-2" width="80" height="80" alt="Acabamento">
+                <p class="mt-2">Acabamento</p>
+            </div>
+            <div class="text-center">
+                <img src="../IMG/parafusadeira 2.png" class="rounded-circle border p-2" width="120" height="120"
+                    alt="Equipamento">
+                <p class="mt-2">Equipamento</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas do mês -->
+    <section class="container my-4">
+        <h4 class="mb-3">Ofertas do Mês</h4>
+        <div class="row g-3">
+             <div class="col-6 col-md-4 col-lg-3">
+                <div class=" card shadow-sm h-100 text-dark">
+                    <div class="d-flex justify-content-center align-items-start p-2">
+                        <img src="../IMG/265141-4.webp" class="card-img-top w-75" alt="Produto">
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="card-text">Piso 44,5x44,5 CM PEI 4 Mármore Creme Marfil</p>
+                        <h5 class="text-primary">R$ 19,90 <small class="text-muted">/ MT</small></h5>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-6 col-md-4 col-lg-3">
+                <div class="qd-produto card shadow-sm h-100 text-white">
+                    <div class="d-flex justify-content-center align-items-start p-2">
+                        <img src="../IMG/265141-4.webp" class="card-img-top w-75" alt="Produto">
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="card-text">Piso 44,5x44,5 CM PEI 4 Mármore Creme Marfil</p>
+                        <h5 class="text-primary">R$ 19,90 <small class="text-muted">/ MT</small></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="qd-produto card shadow-sm h-100 text-white">
+                    <div class="d-flex justify-content-center align-items-start p-2">
+                        <img src="../IMG/265141-4.webp" class="card-img-top w-75" alt="Produto">
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="card-text">Piso 44,5x44,5 CM PEI 4 Mármore Creme Marfil</p>
+                        <h5 class="text-primary">R$ 19,90 <small class="text-muted">/ MT</small></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="qd-produto card shadow-sm h-100 text-white">
+                    <div class="d-flex justify-content-center align-items-start p-2">
+                        <img src="../IMG/265141-4.webp" class="card-img-top w-75" alt="Produto">
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="card-text">Piso 44,5x44,5 CM PEI 4 Mármore Creme Marfil</p>
+                        <h5 class="text-primary">R$ 19,90 <small class="text-muted">/ MT</small></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="qd-produto card shadow-sm h-100 text-white">
+                    <div class="d-flex justify-content-center align-items-start p-2">
+                        <img src="../IMG/265141-4.webp" class="card-img-top w-75" alt="Produto">
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="card-text">Piso 44,5x44,5 CM PEI 4 Mármore Creme Marfil</p>
+                        <h5 class="text-primary">R$ 19,90 <small class="text-muted">/ MT</small></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- repetir cards -->
+        </div>
+
+
+        <!-- Mais Vendidos -->
+        <section class="container my-4">
+            <h4 class="mb-3">Mais Vendidos</h4>
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <img src="produto2.jpg" class="card-img-top" alt="Produto">
+                        <div class="card-body text-center">
+                            <p class="card-text">Piso 44,5x44,5 CM PEI 4 Mármore Creme Marfil</p>
+                            <h5 class="text-primary">R$ 19,90 <small class="text-muted">/ MT</small></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- repetir cards -->
+            </div>
+        </section>
+
+        <!-- Marcas -->
+        <section class="container my-5 text-center">
+            <h5 class="mb-4">Confira nossas marcas</h5>
+            <div class="d-flex justify-content-center flex-wrap gap-4">
+                <img src="tigre.png" alt="Tigre" height="40">
+                <img src="votorantim.png" alt="Votorantim" height="40">
+                <img src="atlas.png" alt="Atlas" height="40">
+                <img src="brasilit.png" alt="BrasilIt" height="40">
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
