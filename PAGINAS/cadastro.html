@@ -1,4 +1,4 @@
-<!doctype html>
+0<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -29,37 +29,38 @@
     <div class="col-lg-6 col-md-8 col-sm-12">
       <div class="card shadow p-4">
         <h3 class="text-center mb-4">Cadastro</h3>
-        <form>
+
+        <form action="caminho do php" method="post">
 
           <!-- Nome -->
           <div class="mb-3">
             <label for="nome" class="form-label">Nome completo:</label>
-            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome completo" required>
           </div>
 
           <!-- CPF -->
           <div class="mb-3">
             <label for="cpf" class="form-label">CPF:</label>
-            <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
           </div>
 
           <!-- Telefone -->
           <div class="mb-3">
             <label for="telefone" class="form-label">Telefone:</label>
-            <input type="text" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
           </div>
 
           <!-- Email -->
           <div class="mb-3">
             <label for="email" class="form-label">E-mail:</label>
-            <input type="email" class="form-control" id="email" placeholder="exemplo@email.com" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@email.com" required>
           </div>
 
           <!-- Senha -->
           <div class="mb-3">
             <label for="senha" class="form-label">Senha:</label>
             <div class="input-group">
-              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+              <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
               <button class="btn btn-outline-secondary" type="button" onclick="togglePassword('senha')">
               👁️
               </button>
@@ -70,7 +71,7 @@
           <div class="mb-3">
             <label for="confirmarSenha" class="form-label">Confirmar Senha:</label>
             <div class="input-group">
-              <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirme sua senha" required>
+              <input type="password" class="form-control" id="confirmarSenha" name="confirmar" placeholder="Confirme sua senha" required>
               <button class="btn btn-outline-secondary" type="button" onclick="togglePassword('confirmarSenha')">
                 👁️
               </button>
