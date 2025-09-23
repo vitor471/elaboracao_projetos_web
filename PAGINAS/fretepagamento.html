@@ -4,159 +4,111 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="#style.css" />
+
   </head>
   <body>
-  <body class="bg-light">
+    <div class="container py-5">
 
-<div class="container py-4">
-
-  <!-- Inicio - Endereço ------------------------- -->
-  <div class="card mb-4">
-    <div class="card-header bg-secondary text-white">
-      <h5 class="mb-0">Endereço para Envio</h5>
-    </div>
+  <!-- Container Cadastro de Pagamento -->
+  <div class="card shadow-sm mb-4">
     <div class="card-body">
-      <form>
-        <div class="mb-3">
-          <label class="form-label">Nome:</label>
-          <input type="text" class="form-control" placeholder="Digite seu nome completo">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Número de telefone:</label>
-          <input type="tel" class="form-control" placeholder="(00) 00000-0000">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">CEP:</label>
-          <input type="text" class="form-control" placeholder="00000-000">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Rua/Avenida:</label>
-          <input type="text" class="form-control">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">CPF:</label>
-          <input type="text" class="form-control" placeholder="000.000.000-00">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Data para entrega:</label>
-          <input type="date" class="form-control">
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- Fim - Endereço ---------------------------- -->
+      <h4 class="section-title mb-3"><i class="bi bi-credit-card me-2"></i> Cadastro de Formas de Pagamento</h4>
 
-  <!-- Inicio - Resumo --------------------------- -->
-  <div class="card mb-4">
-    <div class="card-header bg-primary text-white">
-      <h5 class="mb-0">Resumo do Pedido</h5>
-    </div>
-    <div class="card-body">
-      <p>Subtotal: R$ 199,80</p>
-      <p>Impostos inclusos: R$ 0,00</p>
-      <p>Frete: R$ 20,00</p>
-      <hr>
-      <h5>Valor Total: <span class="float-end text-success">R$ 219,80</span></h5>
-    </div>
-  </div>
-  <!-- Fim - Resumo ------------------------------ -->
-
-  <!-- Inicio - Detalhes do Pedido --------------- -->
-  <div class="card mb-4">
-    <div class="card-header bg-dark text-white">
-      <h5 class="mb-0">Informações do Pedido</h5>
-    </div>
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <img src="../IMG/265141-4.webp" alt="Produto" class="img-thumbnail me-3" style="max-width:100px;">
-        <div>
-          <p class="mb-1">Porcelanato Acetinado 100x200cm Caixa 2,00m²</p>
-          <small class="text-muted">(2 itens)</small>
+      <!-- Escolher formas de pagamento -->
+      <div class="mb-3">
+        <label class="form-label">Formas de Pagamento Aceitas:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="cartao" id="cartao">
+          <label class="form-check-label" for="cartao">Cartão de Crédito/Débito</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="pix" id="pix">
+          <label class="form-check-label" for="pix">Pix</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="boleto" id="boleto">
+          <label class="form-check-label" for="boleto">Boleto Bancário</label>
         </div>
       </div>
-      <p><strong>Número do pedido:</strong> #123456789</p>
-      <p><strong>Tempo de pedido:</strong> 09/09/2025</p>
-    </div>
-  </div>
-  <!-- Fim - Detalhes do Pedido ------------------ -->
 
-  <!-- Inicio - Forma de Pagamento --------------- -->
-  <div class="card mb-4">
-    <div class="card-header bg-info text-white">
-      <h5 class="mb-0">Forma de Pagamento</h5>
-    </div>
-    <div class="card-body text-center">
-      <div class="d-flex justify-content-around flex-wrap gap-3">
-        <button class="btn btn-outline-success" onclick="mostrarPagamento('pix')">Pix</button>
-        <button class="btn btn-outline-primary" onclick="mostrarPagamento('cartao')">Cartão</button>
-        <button class="btn btn-outline-dark" onclick="mostrarPagamento('boleto')">Boleto</button>
+      <!-- Conta para receber -->
+      <h6 class="mt-4">Conta para Receber:</h6>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Banco</label>
+          <input type="text" class="form-control" placeholder="Ex: Banco do Brasil">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Agência</label>
+          <input type="text" class="form-control" placeholder="Ex: 1234-5">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Conta</label>
+          <input type="text" class="form-control" placeholder="Ex: 12345-6">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Chave Pix</label>
+          <input type="text" class="form-control" placeholder="Ex: email@pix.com">
+        </div>
+      </div>
+
+      <div class="text-end mt-3">
+        <button class="btn btn-success"><i class="bi bi-save"></i> Salvar Pagamento</button>
       </div>
     </div>
   </div>
-  <!-- Fim - Forma de Pagamento ------------------ -->
 
-  <!-- Inicio - Área Dinâmica Pagamento ----------- -->
-  <div id="areaPagamento" class="card p-4 d-none">
-    <!-- Aqui entra o conteúdo via JS -->
+  <!-- Container Cadastro de Frete -->
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h4 class="section-title mb-3"><i class="bi bi-truck me-2"></i> Cadastro de Frete</h4>
+
+      <!-- Tabela de frete -->
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-light">
+            <tr>
+              <th>Cidade / Região</th>
+              <th>Valor por KM</th>
+              <th>Prazo (dias)</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" class="form-control" placeholder="Ex: São Paulo"></td>
+              <td><input type="number" class="form-control" placeholder="10,00"></td>
+              <td><input type="number" class="form-control" placeholder="3"></td>
+              <td>
+                <button class="btn btn-primary btn-sm"><i class="bi bi-plus-lg"></i></button>
+                <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Observações importantes -->
+      <div class="mt-4">
+        <label class="form-label">Observações:</label>
+        <textarea class="form-control" rows="3" placeholder="Ex: Frete grátis acima de R$500,00"></textarea>
+      </div>
+
+      <div class="text-end mt-3">
+        <button class="btn btn-success"><i class="bi bi-save"></i> Salvar Frete</button>
+      </div>
+    </div>
   </div>
-  <!-- Fim - Área Dinâmica Pagamento ------------- -->
 
 </div>
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  function mostrarPagamento(tipo) {
-    const area = document.getElementById("areaPagamento");
-    area.classList.remove("d-none");
 
-    if (tipo === "pix") {
-      area.innerHTML = `
-        <h5 class="text-success">Pagamento via Pix</h5>
-        <p>Escaneie o QR Code ou copie o código abaixo:</p>
-        <div class="text-center">
-          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=chavepix123" alt="QR Code Pix" class="mb-3">
-          <button class="btn btn-dark" onclick="copiarPix()">Copiar código</button>
-        </div>
-      `;
-    }
 
-    if (tipo === "cartao") {
-      area.innerHTML = `
-        <h5 class="text-primary">Pagamento com Cartão</h5>
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Número do Cartão</label>
-            <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Validade</label>
-              <input type="text" class="form-control" placeholder="MM/AA">
-            </div>
-            <div class="col-md-6 mb-3">
-              <label class="form-label">CVV</label>
-              <input type="text" class="form-control" placeholder="000">
-            </div>
-          </div>
-          <button class="btn btn-success w-100">Pagar</button>
-        </form>
-      `;
-    }
-
-    if (tipo === "boleto") {
-      area.innerHTML = `
-        <h5 class="text-dark">Pagamento via Boleto</h5>
-        <p>O boleto será gerado e enviado para o seu e-mail.</p>
-        <button class="btn btn-warning">Gerar Boleto</button>
-      `;
-    }
-  }
-
-  function copiarPix() {
-    navigator.clipboard.writeText("chavepix123");
-    alert("Código Pix copiado!");
-  }
-</script>
   </body>
 </html>
